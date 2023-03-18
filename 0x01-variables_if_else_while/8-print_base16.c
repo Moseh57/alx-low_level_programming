@@ -10,7 +10,7 @@ int main(void)
 	for (a = 0; a < 16;)
 	{
 		putchar(a + '0');
-		puthcar(a - 10 + 'a');
+		putchar(a - 10 + 'a');
 		a++;
 	}
 	putchar('\n');
