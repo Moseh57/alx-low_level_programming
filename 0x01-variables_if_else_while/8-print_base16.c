@@ -11,10 +11,10 @@ int main(void)
 	{
 		if (a < 10)
 		{
-			putchar(a + 'e');
+			putchar(a);
 		}
 		else
-			putchar(a - 10 + 'A');
+			putchar(a - 10 + 'a');
 		a++;
 	}
 	putchar('\n');
