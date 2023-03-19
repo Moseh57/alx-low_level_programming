@@ -12,7 +12,7 @@ int main(void)
 	{
 		for (b = 0; b < 10;)
 		{
-			if (a != b)
+			if (a < b)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
