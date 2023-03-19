@@ -11,7 +11,7 @@ int main(void)
 	{
 		if (a < 10)
 		{
-			putchar(a + 'a');
+			putchar(a + 'e');
 		}
 		else
 			putchar(a - 10 + 'A');
