@@ -62,7 +62,7 @@ void print_2(int r)
 	e = (r - c) / 10;
 	_putchar(e + '0');
 	_putchar(c + '0');
-	if (r < 98)
+	if (r != 98)
 	{
 		_putchar(',');
 		_putchar(' ');
