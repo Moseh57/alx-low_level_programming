@@ -5,7 +5,7 @@
  */
 
 
-intt main(void)
+int main(void)
 {
 	int a;
 	unsigned long int f;
