@@ -19,18 +19,21 @@ void times_table(void)
 				e = (c - d) / 10;
 				_putchar(e + '0');
 				_putchar(d + '0');
+				if (b == 9)
+				{
+					_putchar('\n');
+					break;
+				}
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
-				_putchar(c + '0');
-			if (b == 9)
 			{
-				_putchar('$');
-				_putchar('\n');
-				break;
+				_putchar(c + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
 		}
 	}
 
