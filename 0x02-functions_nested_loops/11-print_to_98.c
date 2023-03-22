@@ -19,7 +19,7 @@ void print_to_98(int n)
 	f = n;
 	for (d = n; d <= 98; d++)
 	{
-		if (d >= 0 && d < 9)
+		if (d >= 0 && d <= 9)
 		{
 			_putchar(d + '0');
 			_putchar(',');
