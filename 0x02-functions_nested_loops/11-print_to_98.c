@@ -6,7 +6,7 @@
  */
 
 void print_3(int);
-void print_2(int);
+void print_2(int, int);
 void print_to_98(int n)
 {
 	int d;
@@ -27,7 +27,8 @@ void print_to_98(int n)
 		}
 		if (d > 9)
 		{
-			print_2(d);
+			f = d;
+			print_2(f ,d);
 		}
 		if (d < 0)
 		{
@@ -35,7 +36,7 @@ void print_to_98(int n)
 			if (f > 9)
 			{
 				_putchar('-');
-				print_2(f);
+				print_2(f, d);
 			}
 			else
 			{
@@ -54,7 +55,7 @@ void print_to_98(int n)
  * @r: integer to literate
  * Return: nulll
  */
-void print_2(int r)
+void print_2(int r, int d)
 {
 	int c, e;
 
@@ -62,7 +63,7 @@ void print_2(int r)
 	e = (r - c) / 10;
 	_putchar(e + '0');
 	_putchar(c + '0');
-	if (r != 98)
+	if (d < 98)
 	{
 		_putchar(',');
 		_putchar(' ');
