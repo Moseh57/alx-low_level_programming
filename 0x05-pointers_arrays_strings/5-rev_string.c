@@ -10,13 +10,13 @@ void rev_string(char *s)
 	int k;
 	int i;
 	int p;
-	char temp [893];
+	char temp[893];
 
 	p = 0;
 	i = (strlen(s) - 1);
 	for (k = i; k >= 0; k--)
 	{
-		if (p <= 9)
+		if (p <= i)
 		{
 			temp[p] = s[k];
 			p++;
