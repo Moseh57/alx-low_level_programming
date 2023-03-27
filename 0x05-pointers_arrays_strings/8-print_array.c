@@ -1,4 +1,5 @@
-#include <main.h>
+#include <stdio.h>
+#include "main.h"
 /**
  * print_array -a function to print
  * @a: an int
