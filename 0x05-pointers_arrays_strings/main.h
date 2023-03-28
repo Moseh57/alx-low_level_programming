@@ -10,4 +10,5 @@ void rev_string(char *);
 void puts2(char *);
 void puts_half(char *);
 void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
 #endif
