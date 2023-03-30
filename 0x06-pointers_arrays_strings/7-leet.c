@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * leet - a function to encode
  * @n: character to be encoded
