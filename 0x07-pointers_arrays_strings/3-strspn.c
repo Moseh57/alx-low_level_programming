@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- *
+ * _strspn - a function that chaecks for a char from accept
+ * @s: check string
+ * @accept: string to be checked
+ * Return: the number of bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
