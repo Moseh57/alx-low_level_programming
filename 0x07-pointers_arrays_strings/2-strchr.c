@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - a function to check for a character in a string
  * @s: the string
@@ -9,7 +10,7 @@ char *_strchr(char *s, char c)
 {
 	int i;
 	int j = 0;
-	char *k = 0;
+	char *k = NULL;
 
 	for (i = 0; s[i] != '\0'; i++)
 		j++;
