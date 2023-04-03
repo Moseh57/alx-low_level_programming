@@ -29,5 +29,4 @@ char *_strchr(char *s, char c)
 		}
 	}
 	return (k);
-	_putchar('\n');
 }
