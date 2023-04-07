@@ -1,5 +1,5 @@
 #include "main.h"
-int squareroot(int, int);
+int squareroot(int, long int);
 /**
  * _sqrt_recursion - a function that calls the root func
  * @n: integer to find root
