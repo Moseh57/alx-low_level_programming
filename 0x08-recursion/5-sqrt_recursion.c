@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
  * @b: integer to check ans
  * Return: the root
  */
-int squareroot(int n, int b)
+int squareroot(int n, long int b)
 {
 	if (b <= 0)
 		return (-1);
