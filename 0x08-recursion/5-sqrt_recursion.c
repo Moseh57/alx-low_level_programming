@@ -7,7 +7,7 @@ int squareroot(int, int);
  */
 int _sqrt_recursion(int n)
 {
-	unsigned int b;
+	long int b;
 
 	if (n == 1)
 		return (1);
