@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _isalpha - a function that prints
- * @c: the integer to be checked
+ * _abs - a function that prints
+ * @n: the integer to be checked
  * Return: the value c
  */
-int _isalpha(int c)
+int _abs(int n)
 {
-	return (c);
+	return (n);
 }
