@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _puts - a function for printing a srting
@@ -7,5 +6,4 @@
 
 void _puts(char *str)
 {
-	puts(str);
 }
