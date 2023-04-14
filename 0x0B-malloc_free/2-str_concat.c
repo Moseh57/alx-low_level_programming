@@ -3,7 +3,10 @@
 #include <stdlib.h>
 char *copier(char *g, char *g2);
 /**
- *
+ * str_concat - a fuction that if two strings are NULL
+ * @s1: character to be checked and concentrated
+ * @s2: character to be checked and concentrated
+ * Return: the pointer to the sum string
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -29,6 +32,12 @@ char *str_concat(char *s1, char *s2)
 		return (x);
 	}
 }
+/**
+ * copier - a function that concentrates two non_NULL strings
+ * @g: string to be concentrated
+ * @g2: string to be concentrated
+ * Return: the pointer to the sum string
+ */
 char *copier(char *g, char *g2)
 {
 	unsigned int i = 0;
@@ -38,20 +47,22 @@ char *copier(char *g, char *g2)
 	unsigned int j, m;
 
 	while (g[i] != '\0')
-	       i++;
+		i++;
 	while (g2[l] != '\0')
 		l++;
 	m = i + l + 1;
 	s = malloc(sizeof(char) * m);
+	if (s == NULL)
+		return (NULL);
 	for (j = 0; j < m; j++)
-    {
-        if (j < i)
-            s[j] = g[j];
-        else
-        {
-            s[j] = g2[d];
-            d++;
-        }
-    }
-    return (s);
+	{
+		if (j < i)
+			s[j] = g[j];
+		else
+		{
+			s[j] = g2[d];
+			d++;
+		}
+	}
+	return (s);
 }
