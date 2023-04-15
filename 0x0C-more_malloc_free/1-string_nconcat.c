@@ -2,8 +2,11 @@
 #include <stdlib.h>
 char *copier(char *g, char *g2, unsigned int);
 /**
- *
- *
+ * string_nconcat -  a function that calls the copier function
+ * @s1: character to copy
+ * @s2: character to copy
+ * @n: integer length of s2
+ * Return: the pointer to the function
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -30,8 +33,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 }
 /**
- *
- *
+ * copier - a function to concentrate two strings
+ * @g: character to copy
+ * @g2: character to copy
+ * @f: integer length of g2
+ * Return: pointer to the copied string
  */
 char *copier(char *g, char *g2, unsigned int f)
 {
