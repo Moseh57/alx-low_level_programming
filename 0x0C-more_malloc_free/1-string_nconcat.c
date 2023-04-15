@@ -70,6 +70,5 @@ char *copier(char *g, char *g2, unsigned int f)
 			d++;
 		}
 	}
-	s[j] = '\0';
 	return (s);
 }
