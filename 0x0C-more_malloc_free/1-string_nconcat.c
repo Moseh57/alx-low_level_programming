@@ -70,7 +70,7 @@ char *copier(char *g, char *g2, unsigned int f)
 			d++;
 		}
 	}
-	return (s);
 	if (j > i + 1)
 		s[j] = '\0';
+	return (s);
 }
