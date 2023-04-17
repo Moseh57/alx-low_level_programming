@@ -53,9 +53,17 @@ char *copier(char *g, char *g2, unsigned int f)
 		l++;
 	if (l + 1 >= f)
 		l = f;
-	m = i + l + 1;
-	s = malloc(sizeof(char) * m);
-	if (s == NULL)
+	if (f < l)
+	{
+		m = i + 1;
+		s = malloc(sizeof(char) * m);
+	}
+	else
+	{
+		m = i + l + 1;
+		s = malloc(sizeof(char) * m);
+	}
+	if (!s)
 	{
 		return (NULL);
 		free(s);
