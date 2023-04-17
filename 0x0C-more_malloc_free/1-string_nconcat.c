@@ -71,6 +71,6 @@ char *copier(char *g, char *g2, unsigned int f)
 		}
 	}
 	return (s);
-	if (j > i)
+	if (j > i + 1)
 		s[j] = '\0';
 }
