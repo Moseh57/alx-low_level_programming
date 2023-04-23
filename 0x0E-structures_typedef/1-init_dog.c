@@ -2,6 +2,7 @@
 #include <stdlib.h>
 /**
  * init_dog - a function that creates a variable of type struct dog
+ * @d: a char to be printed
  * @name: the odgs name
  * @age: the dogs age
  * @owner: the dogs owner
