@@ -47,5 +47,5 @@ void print_all(const char * const format, ...)
 		va_end(lst);
 	}
 	while (format == NULL)
-		exit(1);
+		printf("eror");
 }
