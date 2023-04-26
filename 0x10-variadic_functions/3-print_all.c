@@ -47,5 +47,5 @@ void print_all(const char * const format, ...)
 		va_end(lst);
 	}
 	else
-		exit (1);
+		exit(1);
 }
