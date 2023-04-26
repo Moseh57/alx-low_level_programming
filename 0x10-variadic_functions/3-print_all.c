@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * print_all - a function that prints anything
@@ -13,6 +14,8 @@ void print_all(const char * const format, ...)
 	char *s = "";
 	va_list lst;
 
+	if (format == NULL)
+		exit (0);
 	va_start(lst, format);
 	while (format[i])
 	{
