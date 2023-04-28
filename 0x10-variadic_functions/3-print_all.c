@@ -10,13 +10,15 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *temp;
-	char *s = "";
+	char *temp, *s = "";
 	va_list lst;
 
 	va_start(lst, format);
-	if (format == NULL)
+	while (format == NULL)
+	{
 		fprintf(stderr, "error");
+		break;
+	}
 	if (format)
 	{
 		while (format[i])
