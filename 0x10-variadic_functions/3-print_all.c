@@ -15,6 +15,8 @@ void print_all(const char * const format, ...)
 	va_list lst;
 
 	va_start(lst, format);
+	if (format == NULL)
+		fprintf(stderr, "error");
 	if (format)
 	{
 		while (format[i])
@@ -46,6 +48,4 @@ void print_all(const char * const format, ...)
 		printf("\n");
 		va_end(lst);
 	}
-	while (format == NULL)
-		printf("eror");
 }
