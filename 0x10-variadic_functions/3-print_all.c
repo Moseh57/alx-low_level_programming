@@ -16,7 +16,8 @@ void print_all(const char * const format, ...)
 	va_start(lst, format);
 	while (format == NULL)
 	{
-		printf(" ");
+		exit(0);
+		fprintf(stderr, "e");
 		break;
 	}
 	if (format)
