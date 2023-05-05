@@ -1,7 +1,9 @@
 #include "main.h"
 /**
- *
- *
+ * _pow - a function to calculate the power
+ * @b: the base
+ * @ex: the exponential
+ * Return: the result
  */
 int _pow(int b, int ex)
 {
