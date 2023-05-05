@@ -1,5 +1,19 @@
 #include "main.h"
 /**
+ * _pow - a function to calculate power
+ * @b: the base integer
+ * @ex: the exponential
+ * Return: the answer
+ */
+int _pow(int b, int ex)
+{
+	int i, j = 1;
+
+	for (i = 0; i < ex; i++)
+		j *= b;
+	return (j);
+}
+/**
  * binary_to_uint - a finction that converts binary to decimal
  * @b: the binary number
  * Return: the decimal number
