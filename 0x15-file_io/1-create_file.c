@@ -22,7 +22,7 @@ int counts(char *text)
 int create_file(const char *filename, char *text_content)
 {
 	int a, b = 0;
-	ssize_t fd;
+	int fd;
 
 	if (filename == NULL)
 		return (-1);
