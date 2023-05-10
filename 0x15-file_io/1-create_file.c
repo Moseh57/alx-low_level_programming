@@ -8,9 +8,8 @@ int counts(char *text)
 {
 	int i = 0;
 
-	while (text[i] != '\0')
+	while (text[i])
 		i++;
-	i += 1;
 	return (i);
 }
 /**
